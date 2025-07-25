@@ -1,0 +1,264 @@
+/* Career Page Styles */
+
+/* Hero Section */
+.career-hero {
+  text-align: center;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #fff;
+}
+
+.career-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.career-hero-title-accent {
+  color: #27ae60;
+  font-family: 'Rosaline', sans-serif;
+}
+
+/* Benefits Section */
+.career-benefits {
+  background-color: #111;
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.career-benefits-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.career-benefits-list li {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+  color: #ccc;
+}
+
+.career-benefits-list li:before {
+  content: '✓';
+  color: #27ae60;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Job Listings */
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.job-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.job-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-meta {
+  display: block;
+  color: #888;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.job-card ul {
+  margin: 1.5rem 0;
+  padding-left: 1.2rem;
+  color: #ccc;
+}
+
+.job-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.career-apply-btn {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.career-apply-btn:hover {
+  background: #219653;
+  transform: translateY(-2px);
+}
+
+/* Hiring Process */
+.application-process-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid #27ae60;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #27ae60;
+  border-radius: 50%;
+  position: absolute;
+  left: -11px;
+  top: 0;
+}
+
+.timeline-content h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.timeline-content p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Application Form */
+.career-cta {
+  text-align: center;
+  padding: 80px 0;
+  background: #0a0a0a;
+}
+
+.career-cta p {
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.career-general-application-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .career-hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .job-listings {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-hero {
+    padding: 80px 0 60px;
+  }
+  
+  .career-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-item:before {
+    width: 16px;
+    height: 16px;
+    left: -9px;
+  }
+}
+
+/* No Openings Message */
+.no-openings {
+  text-align: center;
+  padding: 3rem 20px;
+  color: #888;
+  font-size: 1.2rem;
+  display: none; /* Will be shown via JS if no jobs */
+}
